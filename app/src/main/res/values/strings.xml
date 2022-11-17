@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Activity1</string>
+    <string name="switch_text">With vibration</string>
+    <string name="button_text">Show</string>
+    <string name="textview_title">Reminder</string>
+    <string-array name="choices">
+        <item>EveryDay</item>
+        <item>EveryWeek</item>
+        <item>OnceTime</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#368A53"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="63dp"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/textview_title" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/task_edt"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:ems="10"
+        android:hint="Task"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:entries="@array/choices" />
+
+    <Switch
+        android:id="@+id/switcher"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:text="@string/switch_text"
+        android:checked="false"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        style="@style/text"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_gravity="right"
+        android:background="#9FBDA4"
+        android:text="@string/button_text" />
+
+</LinearLayout>
